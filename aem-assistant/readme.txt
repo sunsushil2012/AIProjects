@@ -28,6 +28,10 @@ uv sync
 
 python client.py mcp_server.py
 
+5. Please add .env file at root level 
+   
+   add OPENAI_API_KEY= <Add OpenAI key here>
+
 
 
 
