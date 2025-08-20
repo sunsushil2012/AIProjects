@@ -33,6 +33,14 @@ python client.py mcp_server.py
    add OPENAI_API_KEY= <Add OpenAI key here>
 
 
+If using pip as package manager
+
+you can use the following command to install the required packages:
+
+you can skip above step 3 and run below command
+
+pip install -r requirements.txt
+
 
 
 

@@ -36,8 +36,6 @@ from dotenv import load_dotenv
 load_dotenv()
 
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-print("Print API key")
-print(os.getenv('OPENAI_API_KEY'))
 
 if not OPENAI_API_KEY:
     logger.warning("OPENAI_API_KEY is not set in environment variables")
@@ -113,7 +111,7 @@ class MCPClient:
 
         # Initialize server parameters
         server_params = StdioServerParameters(
-            command="python",
+            command="python3",
             args=[server_script_path],
             env=None
         )
