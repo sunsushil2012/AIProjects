@@ -44,12 +44,12 @@ def create_chunks(documents, chunk_size=800, chunk_overlap=200):
     return chunks
 
 # Delete old collection (optional, for a full refresh)
-client.delete_collection(name="pdf_collection")
+#client.delete_collection(name="pdf_collection")
 
 
 # Load and Chunk the PDF
 #pdf_path = "./testing/einstein-albert.pdf"
-pdf_path = "./testing/information1.pdf"
+pdf_path = "./testing/einstein-albert.pdf"
 documents = load_pdf(pdf_path)
 chunks = create_chunks(documents)
 
